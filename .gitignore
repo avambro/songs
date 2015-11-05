@@ -5,6 +5,7 @@ Homestead.json
 .env
 .env.*.php
 .env.php
+.env.*
 
 /bootstrap/compiled.php
 /build/logs
@@ -16,7 +17,8 @@ composer.phar
 /_ide_helper.php
 /app/config/packages
 /public/packages
-
+/config/development
+/config/staging
 
 
 ###	phpstorm  ###
