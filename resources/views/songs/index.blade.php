@@ -5,7 +5,8 @@
 	<h3>Songs Lists</h3>
     <div class="row">
         <div class="col-md-12">
-            <a href="#" class="btn btn-default pull-right"><span class="glyphicon glyphicon-plus-sign"></span> New</a>
+
+            <a href="{!! route('songs.create') !!}" class="btn btn-default pull-right"><span class="glyphicon glyphicon-plus-sign"></span> New</a>
         </div>
         </div>
 
