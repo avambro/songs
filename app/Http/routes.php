@@ -12,8 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
+
+
+Route::controllers([
+	'auth'	=>	'Auth\AuthController',
+	'password' => 'Auth\PasswordController',
+	]);
 
 //by model
 $router->bind('songs',function($slug){
@@ -30,4 +36,3 @@ $router->resource('songs','SongsController');
 //Route::get('songs/{song}','SongsController@show');
 //Route::get('songs/{song}/edit','SongsController@edit');
 //Route::patch('songs/{song}','SongsController@update');
-
