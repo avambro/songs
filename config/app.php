@@ -27,6 +27,7 @@ return [
     */
 
     'url' => 'http://songs.kamehouse/',
+    '_app_name_' => ' Distribution Test Song',
 
     /*
     |--------------------------------------------------------------------------
