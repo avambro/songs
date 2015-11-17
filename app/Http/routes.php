@@ -21,6 +21,17 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 	]);
 
+
+
+Route::get('foo', ['middleware' => ['auth', 'needsPermission'], 'shield' => 'user.create', function()
+{
+    return 'Yes I can!';
+}]);
+
+
+Route::get('home','HomeController@index');
+
+
 //by model
 $router->bind('songs',function($slug){
     return songs\Song::whereSlug($slug)->first();

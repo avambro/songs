@@ -26,7 +26,8 @@ return [
     |
     */
 
-    'url' => 'http://songs.kamehouse/',
+    'url' => 'http://localhost/',
+
     '_app_name_' => ' Distribution Test Song',
 
     /*
@@ -138,8 +139,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
-        //avambro
-        Illuminate\Html\HtmlServiceProvider::class,
+
 
         /*
          * Application Service Providers...
@@ -151,7 +151,8 @@ return [
 
 
         //avambro
-
+        Illuminate\Html\HtmlServiceProvider::class,
+        \Artesaos\Defender\Providers\DefenderServiceProvider::class,
 
 
     ],
@@ -204,6 +205,7 @@ return [
         'View'      => Illuminate\Support\Facades\View::class,
         //avambro
         'Form'      => Illuminate\Html\FormFacade::class,
+        'Defender' => \Artesaos\Defender\Facades\Defender::class,
 
     ],
 
